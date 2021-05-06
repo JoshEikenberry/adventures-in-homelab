@@ -1,0 +1,26 @@
+05/06/21
+
+I suppose I could start journaling my night work sessions. Hi, I'm Eik. I'm currently an SRE engineer. I didn't come to the job with any sort of software engineering training, though - my work experience was definitely not software related, and neither was my degree. But I love the work and I'm trying to ramp myself up as quickly as possible. Home labbing nonsense sounds like a good start.
+
+Because It's my belief that if I can become a contributing member of an actual honest to god engineering team, so can anyone. It's just that there's a lot of information out there on the internet, and most of it is buried under mountains of garbage. This journal won't help with that, of course, but maybe while reading it you can understand that the journey to knowing any of this stuff is steeped in the blood of all your previous selves, staying up til 2am running arcane commands to get GRUB to boot until your eyes start melting out of your head. And then, several days later, coming out on top victorious, but without any real idea what you did aside from another round of "reinstall the OS", but you feel like a god now anyway, and now we're off to the races.
+
+But i digress. Point is, learning to make rocks think for you is hard work, and it's full of a lot of swearing and not knowing anything. I'm learning this as I learn. it's okay to feel like this is all insane. Because it is.
+
+Speaking of insanity, this is my first foray into a homelab project. If anyone has any bright ideas on what to do next after my current experiment (Prometheus/Graphite/Grafana stack managed by Kubernetes/Docker containers), I'd love to hear them.
+
+So.... onwards.
+
+This is my 3rd time dual booting into Ubuntu, only to find that my display driver had reverted to llvmpipe, ubuntu's default display driver. Worse, my resolution was stuck at 1024x768. Not very ideal on my 4k display. For some reason, needed to explicitly install Nvidia's recommended drivers (460) and restart the OS (which I thought was a cardinal sin in Linux for device installation?)
+  Next, my sound output volume is much too quiet. Even with the artifical boost in spotify, I have to crank up the volume on my headphones to hear much of anything. Ah, "over-amplification" setting in Ubuntu. That works for now, I suppose. Can't homelab without tunes!
+  Alright, tonight's plan: Install Docker and maybe Kubernetes. The whole point of this homelab experiment is to see if i can run the Prometheus/Graphite/Grafana pipeline on a single PC via Docker containers.
+  Things I get to learn:
+  - linux. I'm new to it, and the more I use it, the more I enjoy using it. Funny it only took me a quarter century to warm up to it.
+  - Docker. Only experience was during the hackathon at work, but I liked what I saw. I'll enjoy the rapid iteration on crafting very specific images, I bet.
+  - Kubernetes. I know very little about what this does, but this is a great opportunity to get my feet wet.
+  - Prometheus - we use it at work, where I am learning how to grapple with making the queries make sense. But i want to actually see how hard it is to get it monitoring something on a box under my own control. 
+  - Graphite - storage of all that sexy Prometheus data. Again, we use it at work. I've had a lot of issues with it, but maybe getting it to run on my own projects will help me understand it better?
+  - Grafana - the pretty data frontend we use at work. I like it the more I use it, although it can be frustratingly obtuse at times. 
+  
+  Anyway, to war.
+  
+  
